@@ -1,4 +1,7 @@
-read -p "Enter number 1 :" Number1
-read -p "Enter number 2 :" Number2
-read -p "Enter number 3 :" Number3
+read -p "Enter number 1 :" a
+read -p "Enter number 2 :" b
+read -p "Enter number 3 :" c
+computation1=$(( $a+$b*$c ))
+
+echo "first computation is:" $computation1
 
