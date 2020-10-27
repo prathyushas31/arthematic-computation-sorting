@@ -24,6 +24,13 @@ do
    count=$(( $count+1 ))
 done
 echo "array values are :"${array[@]}
+sort=`echo ${array[@]} | awk 'BEGIN{RS=" ";} {print $1}' | sort -n -r`
+counter=0
+for values in $sort
+do
+sortedarray[((counter++))]="$values"
+done
+echo "sorted array in descending order are:" ${sortedarray[@]}
 
 
 
